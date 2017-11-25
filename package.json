@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "chalk": "^2.3.0",
-    "grunt-accessibility-html-reporter": "^0.1.0"
+    "grunt-accessibility-html-reporter": "^0.0.1"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
