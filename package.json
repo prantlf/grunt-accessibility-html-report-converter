@@ -27,7 +27,8 @@
   },
   "scripts": {
     "test": "grunt",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "dependencies": {
     "chalk": "^2.3.1",
@@ -38,7 +39,8 @@
   "devDependencies": {
     "grunt": "^1.0.2",
     "grunt-standard": "^3.1.0",
-    "semantic-release": "^12.4.1"
+    "semantic-release": "^12.4.1",
+    "travis-deploy-once": "^4.3.4"
   },
   "peerDependencies": {
     "grunt": ">=0.4.5"
