@@ -159,6 +159,7 @@ your code using Grunt.
 
 ## Release History
 
+ * 2018-02-19   v2.0.0   Upgrade to the reporter v2.0.0
  * 2018-02-19   v1.0.0   Upgrade to the reporter v1.0.0
  * 2017-11-25   v0.0.5   Fix appending the HTML extension to the target report file
  * 2017-11-25   v0.0.4   Upgrade the reporter dependency to support Node.js < 7
