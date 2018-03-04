@@ -48,6 +48,13 @@ module.exports = function (grunt) {
         },
         src: 'tests/expected/report.json',
         dest: 'tests/actual/'
+      },
+      showFileNameOnly: {
+        options: {
+          showFileNameOnly: true
+        },
+        src: 'tests/expected/report.json',
+        dest: 'tests/extra/'
       }
     },
 
@@ -56,7 +63,7 @@ module.exports = function (grunt) {
     },
 
     clean: {
-      tests: ['tests/actual/*']
+      tests: ['tests/actual/*', 'tests/extra']
     }
   })
 
