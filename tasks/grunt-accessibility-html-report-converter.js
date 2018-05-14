@@ -16,11 +16,13 @@ module.exports = function (grunt) {
           targetExtension: '.html',
           ignoreMissing: false,
           showFileNameOnly: false,
+          showCommonPathOnly: true,
           force: false
         })
         const targetExtension = options.targetExtension
         const ignoreMissing = options.ignoreMissing
         const showFileNameOnly = options.showFileNameOnly
+        const showCommonPathOnly = options.showCommonPathOnly
         const force = options.force
         const warn = force ? grunt.log.warn : grunt.fail.warn
         var files = this.files
@@ -93,7 +95,8 @@ module.exports = function (grunt) {
           try {
             const results = JSON.parse(fs.readFileSync(src, 'utf-8'))
             const generated = report(results, {
-              showFileNameOnly: showFileNameOnly
+              showFileNameOnly: showFileNameOnly,
+              showCommonPathOnly: showCommonPathOnly
             })
             fs.writeFileSync(dest, generated, 'utf-8')
             ++converted

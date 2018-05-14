@@ -55,6 +55,13 @@ module.exports = function (grunt) {
         },
         src: 'tests/expected/report.json',
         dest: 'tests/extra/'
+      },
+      showCommonPathOnly: {
+        options: {
+          showCommonPathOnly: false
+        },
+        src: 'tests/expected/report.json',
+        dest: 'tests/extra2/'
       }
     },
 
@@ -63,7 +70,7 @@ module.exports = function (grunt) {
     },
 
     clean: {
-      tests: ['tests/actual/*', 'tests/extra']
+      tests: ['tests/actual/*', 'tests/extra', 'tests/extra2']
     }
   })
 
